@@ -11,7 +11,6 @@ description: Scouting America Troop 2536 in Mountain House, CA — adventure, le
     hiking, pioneering, service, and leadership — run by the scouts, guided by
     trained adults. Boys ages 11–17 are welcome year-round.
   </p>
-  <a class="btn btn-green" href="{{ '/contact/' | relative_url }}">Visit a meeting — join anytime</a>
 </section>
 
 <div class="card-grid">
