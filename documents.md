@@ -6,7 +6,7 @@ description: Troop 2536 documents, forms, and resource links.
 
 <p class="page-lede">Forms, handbooks, and resources families need.</p>
 
-<div class="contact-card" style="border-left-color: var(--purple);">
+<div class="contact-card">
   <div class="who">
     <strong>📁 Troop document folder</strong><br>
     Permission slips, packing lists, and troop handbooks live in our shared
@@ -15,7 +15,7 @@ description: Troop 2536 documents, forms, and resource links.
   <a class="btn btn-purple" href="{{ site.drive_url }}">Open the Drive folder</a>
 </div>
 
-<h2>Quick reference</h2>
+<h2><span class="eyebrow">Downloads &amp; links</span>Quick reference</h2>
 <table>
   <tr><th>Document</th><th>Where to get it</th></tr>
   <tr><td>Camping packing list</td><td>Drive folder → <em>TODO(dad): confirm folder location</em></td></tr>

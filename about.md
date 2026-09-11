@@ -11,14 +11,14 @@ description: What Troop 2536 is all about and how the troop runs.
   where scouts take real responsibility with trained adults backing them up.
 </p>
 
-<h2>Meetings</h2>
+<h2><span class="eyebrow">When &amp; where</span>Meetings</h2>
 <table>
   <tr><th>When</th><td><span class="todo-inline">TODO(dad): meeting night &amp; time</span></td></tr>
   <tr><th>Where</th><td><span class="todo-inline">TODO(dad): meeting location, Mountain House</span></td></tr>
   <tr><th>Who</th><td>Boys ages 11–17. Visitors welcome — just <a href="{{ '/contact/' | relative_url }}">email us</a> first so we can expect you.</td></tr>
 </table>
 
-<h2>Leadership</h2>
+<h2><span class="eyebrow">How the troop runs</span>Leadership</h2>
 <p>
   In Scouts BSA, the scouts run the troop. The Senior Patrol Leader and the
   Patrol Leaders' Council plan the year; adults coach, keep everyone safe, and
@@ -39,7 +39,7 @@ description: What Troop 2536 is all about and how the troop runs.
   </div>
 </div>
 
-<h2>What we do</h2>
+<h2><span class="eyebrow">The program</span>What we do</h2>
 <ul>
   <li><strong>Monthly campouts</strong> — tent camping, backpacking, and council camps across Northern California.</li>
   <li><strong>Rank advancement</strong> — from Scout through Eagle, at each scout's own pace.</li>
@@ -47,7 +47,7 @@ description: What Troop 2536 is all about and how the troop runs.
   <li><strong>High adventure</strong> — the long-term prize: places like Philmont and Sea Base.</li>
 </ul>
 
-<h2>Join us</h2>
+<h2><span class="eyebrow">Get started</span>Join us</h2>
 <p>
   Any boy age 11+ (or finished 5th grade) can join at any meeting of the year —
   there's no "season." The best first step is visiting a meeting. Head to the

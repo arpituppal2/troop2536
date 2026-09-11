@@ -5,10 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/troop.css' | relative_url }}">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%9C%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%237434AC'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='%23C9A227'%3E⚜%3C/text%3E%3C/svg%3E">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <nav class="site-nav" aria-label="Main">
       <a class="brand" href="{{ '/' | relative_url }}">
@@ -28,15 +33,16 @@
     </nav>
   </header>
 
-  <main class="site-main">
+  <main id="main" class="site-main">
     {{ content }}
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-col">
-        <strong>BSA Troop 2536</strong> — Mountain House, California<br>
-        <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        <div class="footer-brand"><span class="brand-mark" aria-hidden="true">⚜</span> BSA Troop 2536</div>
+        <p>Mountain House, California<br>
+        <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
       </div>
       <div class="footer-col footer-small">
         Chartered organization: <span class="todo-inline">TODO(dad)</span><br>
