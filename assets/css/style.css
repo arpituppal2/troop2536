@@ -193,6 +193,39 @@ th {
 .gcal iframe { display: block; width: 100%; border: 0; }
 
 /* ============================================================
+   Scout resources
+   ============================================================ */
+/* Flat 12-cell grid for the Scout Law — no cards, just hairlines.
+   Border trick: left+top on cells, right+bottom on the grid keeps
+   uniform rules at any column count. */
+.law-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  margin: 1.25rem 0 2rem;
+}
+.law-grid > div {
+  padding: 1rem 1.1rem;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+  display: flex; align-items: baseline; gap: .6rem;
+}
+.law-num { font-family: var(--sans); font-size: .7rem; font-weight: 600; letter-spacing: .08em; color: var(--gold); }
+.law-grid span:last-child { font-family: var(--serif); font-size: 1.05rem; font-weight: 600; color: var(--ink); }
+@media (max-width: 640px) {
+  .law-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Oath / Motto / Slogan / Outdoor Code — flat left-bar quote, same
+   language as .block */
+.creed {
+  margin: 1rem 0 1.5rem; padding: 1rem 1.4rem;
+  border-left: 3px solid var(--purple); background: var(--tint);
+  font-family: var(--serif); font-size: 1.05rem; line-height: 1.55;
+  color: var(--ink);
+}
+
+/* ============================================================
    TODO markers (content placeholders)
    ============================================================ */
 .todo {
