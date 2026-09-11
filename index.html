@@ -33,9 +33,13 @@
   </header>
 
   <main id="main">
-    <div class="wrap">
-
-      <section class="hero reveal">
+    <section class="hero reveal">
+      <!-- Primary landing photo: drop a file named Home.png next to
+           index.html and it becomes the full-width hero with the text
+           overlaid on top. Remove it and the hero returns to the flat
+           paper version. -->
+      <img class="hero-bg" src="Home.png" alt="Troop 2536" onerror="this.remove()">
+      <div class="wrap hero-inner">
         <h1>Adventure starts here.</h1>
         <p class="lede">
           Troop 2536 is a Scouts BSA troop in Mountain House, California.
@@ -44,12 +48,10 @@
           welcome year-round.
         </p>
         <div class="hero-rule" aria-hidden="true"></div>
-        <!-- Primary landing photo: drop a file named Home.png next to
-             index.html and it appears here automatically. -->
-        <div class="hero-photo">
-          <img src="Home.png" alt="Troop 2536" onerror="this.parentNode.remove()">
-        </div>
-      </section>
+      </div>
+    </section>
+
+    <div class="wrap">
 
       <h2>The program</h2>
       <div class="rows reveal">
