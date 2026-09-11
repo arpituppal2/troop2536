@@ -12,10 +12,10 @@ description: Troop 2536 documents, forms, and resource links.
     Permission slips, packing lists, and troop handbooks live in our shared
     Google Drive folder.
   </div>
-  <a class="btn btn-purple" href="{{ site.drive_url }}">Open the Drive folder</a>
+  <a class="btn btn-primary" href="{{ site.drive_url }}">Open the Drive folder</a>
 </div>
 
-<h2><span class="eyebrow">Downloads &amp; links</span>Quick reference</h2>
+<h2>Quick reference</h2>
 <table>
   <tr><th>Document</th><th>Where to get it</th></tr>
   <tr><td>Camping packing list</td><td>Drive folder → <em>TODO(dad): confirm folder location</em></td></tr>

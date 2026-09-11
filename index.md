@@ -5,39 +5,36 @@ description: Scouting America Troop 2536 in Mountain House, CA — adventure, le
 ---
 
 <section class="hero">
-  <span class="hero-kicker">Mountain House · California</span>
-  <h1>Adventure, leadership, and character.</h1>
+  <h1>Troop 2536</h1>
   <p>
-    Troop 2536 is a Scouts BSA troop in Mountain House. Camping, hiking,
+    A Scouts BSA troop in Mountain House, California. Camping, hiking,
     pioneering, service, and leadership — run by the scouts, guided by
     trained adults. Boys ages 11–17 are welcome year-round.
   </p>
+  <div class="hero-rule" aria-hidden="true"></div>
 </section>
 
-<div class="card-grid">
-  <div class="card">
-    <div class="card-icon" aria-hidden="true">📍</div>
+<div class="columns">
+  <div>
     <h3>Weekly meetings</h3>
     <p><span class="todo-inline">TODO(dad): meeting night, time, and location</span></p>
   </div>
-  <div class="card">
-    <div class="card-icon" aria-hidden="true">⛺</div>
+  <div>
     <h3>Monthly adventures</h3>
     <p>Campouts and outings nearly every month — see the <a href="{{ '/schedule/' | relative_url }}">schedule</a> for what's next.</p>
   </div>
-  <div class="card">
-    <div class="card-icon" aria-hidden="true">⚜</div>
+  <div>
     <h3>Youth-led</h3>
     <p>Scouts plan and lead everything. They learn leadership by leading.</p>
   </div>
 </div>
 
-<h2><span class="eyebrow">Never miss an event</span>Upcoming events</h2>
+<h2>Upcoming events</h2>
 <p class="page-lede">The troop calendar, straight from our Google Calendar — always current.</p>
 {% include gcal.html mode="AGENDA" height="400" title="Upcoming Troop 2536 events" %}
 <p><a href="{{ '/schedule/' | relative_url }}">Full schedule →</a></p>
 
-<h2><span class="eyebrow">Latest from the troop</span>Announcements</h2>
+<h2>Latest announcements</h2>
 {% assign recent = site.announcements | sort: "date" | reverse | limit: 3 %}
 {% for announcement in recent %}
   <article class="announcement">
