@@ -21,7 +21,7 @@ goal is "push to main → live," with as few moving parts as possible.
 4. **Galleries:** a folder under `images/` IS a gallery. No page edits
    needed. Never edit `photos.md` to add one.
 5. **Design tokens:** all colors live at the top of `assets/css/troop.css`
-   (`--purple`, `--green`, etc.). Change those, not per-element hex codes.
+   (`--purple`, `--gold`, etc.). Change those, not per-element hex codes.
 6. **Calendar:** the single source of truth is `_includes/gcal.html`.
    Replace `CALENDAR_ID_PLACEHOLDER` there once; never hardcode the ID in
    pages.

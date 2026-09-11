@@ -23,7 +23,7 @@ description: Get in touch with Troop 2536 in Mountain House, CA.
     <p>
       Schedule, meetings, requirements, anything else — ask away.
     </p>
-    <p><a class="btn btn-green" href="mailto:{{ site.email }}?subject=Troop%202536%20question">Ask a question</a></p>
+    <p><a class="btn btn-gold" href="mailto:{{ site.email }}?subject=Troop%202536%20question">Ask a question</a></p>
   </div>
   <div class="card">
     <h3>🤝 Community &amp; service</h3>
@@ -31,7 +31,7 @@ description: Get in touch with Troop 2536 in Mountain House, CA.
       Mountain House organizations: our scouts are ready to help with service
       projects.
     </p>
-    <p><a class="btn btn-green" href="mailto:{{ site.email }}?subject=Service%20project%20inquiry">Propose a project</a></p>
+    <p><a class="btn btn-gold" href="mailto:{{ site.email }}?subject=Service%20project%20inquiry">Propose a project</a></p>
   </div>
 </div>
 
