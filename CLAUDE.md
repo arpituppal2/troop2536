@@ -1,58 +1,36 @@
 # CLAUDE.md — conventions for Claude Code sessions working in this repo
 
-This is a GitHub Pages site built with **native Jekyll** (no npm, no build
-tooling, no CI workflows). Publish source is `main /root`. Do not introduce
-package.json, node_modules, or GitHub Actions deploy workflows — the design
-goal is "push to main → live," with as few moving parts as possible.
+This is a **plain static HTML site** on GitHub Pages. No Jekyll, no build
+tooling, no frameworks, no package managers. Publish source is
+`main` / root, with `.nojekyll` so GitHub serves the files as-is. The
+design goal is "push to main → live" with as few moving parts as possible.
 
 ## Non-negotiable rules
 
 1. **Never push directly to main.** Always open a PR. The adult merge click
    is the site's safety gate.
-2. **Youth protection on photos:** verify before opening any photo PR —
-   parental permission is on file, captions use first names only, no
-   identifying details (addresses, plates, school names). Flag violations
-   instead of publishing.
-3. **Announcements:** copy `_announcements/_TEMPLATE.md`, rename to
-   `YYYY-MM-DD-slug.md` in `_announcements/`, complete the front matter,
-   run the checklist inside the template. `_TEMPLATE.md` itself must never
-   appear on the site (the underscore prefix is what hides it — don't
-   remove it).
-4. **Galleries:** a folder under `images/` IS a gallery. No page edits
-   needed. Never edit `photos.md` to add one.
-5. **Design tokens:** all colors live at the top of `assets/css/troop.css`
-   (`--purple`, `--green`, etc.). Change those, not per-element hex codes.
-6. **Calendar:** the single source of truth is `_includes/gcal.html`.
-   Replace `CALENDAR_ID_PLACEHOLDER` there once; never hardcode the ID in
-   pages.
-7. **Placeholders:** visible TODOs use `<span class="todo-inline">TODO(dad):
+2. **Youth protection:** if photos are ever added — parental permission on
+   file, first names only, no identifying details (addresses, plates,
+   school names). Flag violations instead of publishing.
+3. **Design tokens:** all colors live at the top of `assets/css/style.css`.
+   Purple-only palette — no green, ever. Gold (`--gold`) is reserved for the
+   fleur-de-lis mark and thin accent rules.
+4. **Flat design:** no rounded corners, no drop shadows, no gradients.
+   `border-radius: 0` is enforced globally — don't reintroduce any of these.
+5. **Fonts:** Georgia (serif) for display/body, system sans for labels and
+   nav. No webfonts.
+6. **JavaScript:** `assets/js/main.js` (scroll fade-in) is the only script.
+   The site must fully work with JS disabled. Don't add more.
+7. **Shared chrome:** the header and footer are duplicated across all HTML
+   pages (no templating). When changing nav or footer, update every page.
+8. **Placeholders:** visible TODOs use `<span class="todo">TODO(dad):
    …</span>`. When Dad provides real info, remove the placeholder entirely
    and update the checklist in README.md.
-8. **Keep it boring:** no JavaScript unless something genuinely requires it;
-   no third-party trackers or analytics; no new dependencies.
+9. **Calendar:** the Google Calendar embed lives in `index.html` and
+   `schedule.html` with `CALENDAR_ID_PLACEHOLDER`. Replace it in both; never
+   hardcode a different ID in one place only.
 
 ## Maintenance guide
 
 All task recipes live in `README.md` — point the human there. Do the task,
 open a PR, reference the recipe number in the PR description.
-
-## Skill routing
-
-When the user's request matches an available skill, invoke it via the Skill
-tool. When in doubt, invoke the skill.
-
-Key routing rules:
-
-- Product ideas/brainstorming → invoke /office-hours
-- Strategy/scope → invoke /plan-ceo-review
-- Architecture → invoke /plan-eng-review
-- Design system/plan review → invoke /design-consultation or /plan-design-review
-- Full review pipeline → invoke /autoplan
-- Bugs/errors → invoke /investigate
-- QA/testing site behavior → invoke /qa or /qa-only
-- Code review/diff check → invoke /review
-- Visual polish → invoke /design-review
-- Ship/deploy/PR → invoke /ship or /land-and-deploy
-- Save progress → invoke /context-save
-- Resume context → invoke /context-restore
-- Author a backlog-ready spec/issue → invoke /spec

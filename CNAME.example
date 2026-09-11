@@ -1,12 +1,1 @@
-# Copy this file to `CNAME` (no extension) when troop2536.org is live.
-# A CNAME file in the repo root tells GitHub Pages to serve the site on
-# that domain. GitHub Pages then provides free HTTPS automatically.
-#
-# Also add these records at the domain registrar (full steps in README.md):
-#   A     @     185.199.108.153
-#   A     @     185.199.109.153
-#   A     @     185.199.110.153
-#   A     @     185.199.111.153
-#   CNAME www   troop2536-mh.github.io
-#
-# Then update `url` in _config.yml to https://troop2536.org
+troop2536.org

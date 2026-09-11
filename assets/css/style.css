@@ -1,0 +1,255 @@
+/* ============================================================
+   Troop 2536 — flat, classic, purple-only.
+   No Jekyll. No frameworks. No shadows. No rounded corners.
+   Paper background, hairline rules, serif display type.
+   ============================================================ */
+
+:root {
+  --paper:         #FAF7F1;  /* warm paper */
+  --ink:           #231B30;
+  --purple:        #46206E;  /* primary */
+  --purple-deep:   #2B1347;  /* footer / emphasis */
+  --purple-bright: #6B3AA2;  /* hover */
+  --tint:          #F1EAF5;  /* flat tint blocks */
+  --line:          #DCD2E2;  /* hairlines */
+  --muted:         #675D72;
+  --gold:          #A8862B;  /* fleur-de-lis + thin rules only */
+
+  --serif: Georgia, 'Times New Roman', serif;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  --maxw: 1020px;
+}
+
+* { box-sizing: border-box; border-radius: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+a { color: var(--purple); }
+a:hover { color: var(--purple-bright); }
+
+:focus-visible { outline: 2px solid var(--purple); outline-offset: 2px; }
+
+.skip-link {
+  position: absolute; left: -999px; top: 0; z-index: 100;
+  background: var(--purple-deep); color: #fff;
+  font-family: var(--sans); font-size: .85rem; padding: .6rem 1rem;
+}
+.skip-link:focus { left: 0; }
+
+.wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 1.25rem; }
+
+/* Small-caps micro label */
+.label {
+  font-family: var(--sans);
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--purple);
+}
+
+/* ============================================================
+   Masthead
+   ============================================================ */
+.topbar { height: 4px; background: var(--purple); }
+.masthead { background: var(--paper); border-bottom: 1px solid var(--line); }
+.masthead-inner {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; padding-top: .9rem; padding-bottom: .9rem;
+}
+.wordmark { display: flex; align-items: center; gap: .65rem; text-decoration: none; color: var(--ink); }
+.wordmark .mark { color: var(--gold); font-size: 1.6rem; line-height: 1; }
+.wordmark-text { font-family: var(--serif); font-weight: 700; font-size: 1.3rem; line-height: 1.05; }
+.wordmark-text small {
+  display: block; font-family: var(--sans); font-weight: 400;
+  font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted);
+}
+
+.nav-toggle { position: absolute; opacity: 0; pointer-events: none; }
+.nav-burger { display: none; cursor: pointer; padding: .5rem; }
+.nav-burger span, .nav-burger span::before, .nav-burger span::after {
+  display: block; background: var(--ink); height: 2px; width: 22px; position: relative;
+}
+.nav-burger span::before, .nav-burger span::after { content: ''; position: absolute; }
+.nav-burger span::before { top: -6px; }
+.nav-burger span::after { top: 6px; }
+
+.nav { display: flex; gap: 1.3rem; }
+.nav a {
+  font-family: var(--sans); font-size: .8rem; font-weight: 600;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--ink); text-decoration: none;
+  padding: .3rem 0; border-bottom: 2px solid transparent;
+}
+.nav a:hover { border-bottom-color: var(--purple); color: var(--purple); }
+.nav a[aria-current="page"] { border-bottom-color: var(--purple); color: var(--purple); }
+
+@media (max-width: 780px) {
+  .nav-burger { display: block; }
+  .nav {
+    display: none; flex-direction: column; gap: .25rem;
+    width: 100%; padding: .5rem 0 .75rem;
+  }
+  .nav a { border-bottom: none; padding: .45rem 0; font-size: .9rem; }
+  .masthead-inner { flex-wrap: wrap; }
+  .nav-toggle:checked ~ .nav { display: flex; }
+}
+
+/* ============================================================
+   Page content
+   ============================================================ */
+main { padding: 3rem 0 4rem; min-height: 60vh; }
+
+h1, h2, h3 { font-family: var(--serif); color: var(--ink); }
+h1 { font-size: 2.2rem; font-weight: 700; margin: 0 0 .75rem; line-height: 1.15; }
+h2 {
+  font-size: 1.7rem; font-weight: 700; line-height: 1.2;
+  margin: 3rem 0 1rem; padding-bottom: .5rem;
+  border-bottom: 1px solid var(--line);
+}
+h3 { font-size: 1.15rem; margin: 0 0 .35rem; }
+p { margin: 0 0 1rem; }
+
+.lede { font-size: 1.15rem; color: var(--muted); max-width: 42rem; }
+
+/* ============================================================
+   Hero (home)
+   ============================================================ */
+.hero { padding: 3.5rem 0 2.5rem; border-bottom: 1px solid var(--line); }
+.hero .label { display: block; margin-bottom: 1rem; }
+.hero h1 {
+  font-size: clamp(2.6rem, 7vw, 4.6rem);
+  line-height: 1.02; letter-spacing: -0.015em;
+  margin: 0 0 1.25rem; max-width: 14ch;
+}
+.hero .lede { font-size: 1.2rem; max-width: 40rem; margin-bottom: 0; }
+.hero-rule { width: 4rem; border-top: 2px solid var(--gold); margin-top: 2rem; }
+
+/* Flat fact strip */
+.facts {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 1rem;
+}
+.fact { padding: 1.25rem 1.25rem 1.25rem 0; }
+.fact + .fact { border-left: 1px solid var(--line); padding-left: 1.25rem; }
+.fact .label { display: block; margin-bottom: .3rem; }
+.fact .value { font-size: 1.05rem; }
+@media (max-width: 640px) {
+  .facts { grid-template-columns: 1fr; }
+  .fact + .fact { border-left: none; border-top: 1px solid var(--line); padding-left: 0; }
+}
+
+/* ============================================================
+   Numbered program rows
+   ============================================================ */
+.rows { border-top: 1px solid var(--line); margin-top: .5rem; }
+.row {
+  display: grid; grid-template-columns: 4.5rem 1fr; gap: 1.25rem;
+  padding: 1.5rem 0; border-bottom: 1px solid var(--line);
+}
+.row .num { font-family: var(--serif); font-size: 1.9rem; color: var(--purple); line-height: 1.1; }
+.row p { margin: 0; color: var(--muted); }
+
+/* ============================================================
+   Buttons — flat rectangles
+   ============================================================ */
+.btn {
+  display: inline-block; font-family: var(--sans); font-size: .85rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase;
+  padding: .8rem 1.4rem; border: 2px solid var(--purple);
+  text-decoration: none; cursor: pointer; min-height: 44px;
+}
+.btn-fill { background: var(--purple); color: #fff; }
+.btn-fill:hover { background: var(--purple-deep); border-color: var(--purple-deep); color: #fff; }
+.btn-line { background: transparent; color: var(--purple); }
+.btn-line:hover { background: var(--tint); color: var(--purple-deep); }
+
+/* ============================================================
+   Announcements — ruled list
+   ============================================================ */
+.post { padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
+.post:first-of-type { border-top: 1px solid var(--line); }
+.post h3 { font-size: 1.3rem; margin: 0 0 .2rem; }
+.post .date {
+  font-family: var(--sans); font-size: .75rem; font-weight: 600;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
+  display: block; margin-bottom: .6rem;
+}
+.post p:last-child { margin-bottom: 0; }
+.tag {
+  display: inline-block; font-family: var(--sans); font-size: .68rem; font-weight: 700;
+  letter-spacing: .12em; text-transform: uppercase;
+  color: var(--gold); border: 1px solid var(--gold);
+  padding: .1rem .5rem; margin-left: .5rem; vertical-align: middle;
+}
+
+/* ============================================================
+   Blocks, tables, calendar
+   ============================================================ */
+.block {
+  border: 1px solid var(--line); border-left: 3px solid var(--purple);
+  background: #fff; padding: 1.25rem 1.4rem; margin: 1rem 0;
+}
+.block .role { font-family: var(--sans); font-size: .8rem; color: var(--muted); }
+
+table { border-collapse: collapse; width: 100%; margin: 1.25rem 0; background: #fff; }
+th, td { border: 1px solid var(--line); padding: .65rem .95rem; text-align: left; vertical-align: top; }
+th {
+  background: var(--purple); color: #fff;
+  font-family: var(--sans); font-size: .78rem; font-weight: 600;
+  letter-spacing: .1em; text-transform: uppercase;
+}
+
+.gcal { border: 1px solid var(--line); background: #fff; padding: .5rem; margin: 1.25rem 0; }
+.gcal iframe { display: block; width: 100%; border: 0; }
+
+/* ============================================================
+   TODO markers (content placeholders)
+   ============================================================ */
+.todo {
+  background: #FFF3B8; border-bottom: 2px dashed #B58900;
+  padding: 0 .3rem; font-family: 'Courier New', monospace; font-size: .88em;
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+.site-footer { background: var(--purple-deep); border-top: 2px solid var(--gold); color: #CFC3DE; margin-top: 4rem; }
+.footer-inner {
+  display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 2rem;
+  padding-top: 2.5rem; padding-bottom: 2.5rem;
+}
+.site-footer .wordmark-footer { font-family: var(--serif); font-weight: 700; font-size: 1.5rem; color: #fff; }
+.site-footer .mark { color: var(--gold); margin-right: .4rem; }
+.site-footer a { color: #fff; }
+.site-footer a:hover { color: #D9CCE9; }
+.footer-h { font-family: var(--sans); font-size: .72rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: #9C8AB5; margin: 0 0 .6rem; }
+.footer-nav { list-style: none; margin: 0; padding: 0; }
+.footer-nav li { margin-bottom: .35rem; }
+.footer-nav a { text-decoration: none; font-family: var(--sans); font-size: .9rem; }
+.footer-nav a:hover { text-decoration: underline; }
+.footer-fine { font-size: .85rem; }
+@media (max-width: 700px) { .footer-inner { grid-template-columns: 1fr; } }
+
+/* ============================================================
+   Reveal on scroll (subtle; disabled without JS / reduced motion)
+   ============================================================ */
+.js .reveal { opacity: 0; transform: translateY(14px); }
+.js .reveal.in {
+  opacity: 1; transform: none;
+  transition: opacity .7s ease, transform .7s ease;
+}
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal { opacity: 1; transform: none; }
+  .js .reveal.in { transition: none; }
+}

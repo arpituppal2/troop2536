@@ -1,18 +1,2 @@
-# macOS
 .DS_Store
-
-# Agent workspace metadata (never publish)
 .freebuff/
-
-# Jekyll local build output (only created by optional local preview)
-_site/
-.jekyll-cache/
-.jekyll-metadata
-
-# Ruby (only used by optional local preview)
-vendor/
-.bundle/
-
-# Editor noise
-*.swp
-*~
