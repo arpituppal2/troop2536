@@ -1,0 +1,122 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Troop 2536 Mountain House, California" [ref=e6] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=e7]: ⚜
+        - generic [ref=e8]:
+          - text: Troop 2536
+          - generic [ref=e9]: Mountain House, California
+      - checkbox "Menu"
+      - navigation "Main" [ref=e10]:
+        - link "Home" [ref=e11] [cursor=pointer]:
+          - /url: index.html
+        - link "About" [ref=e12] [cursor=pointer]:
+          - /url: about.html
+        - link "Schedule" [ref=e13] [cursor=pointer]:
+          - /url: schedule.html
+        - link "Announcements" [ref=e14] [cursor=pointer]:
+          - /url: announcements.html
+        - link "Documents" [ref=e15] [cursor=pointer]:
+          - /url: documents.html
+        - link "Contact" [ref=e16] [cursor=pointer]:
+          - /url: contact.html
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Scouts BSA · Est. Mountain House
+        - heading "Adventure starts here." [level=1] [ref=e21]
+        - paragraph [ref=e22]: Troop 2536 is a Scouts BSA troop in Mountain House, California. Camping, hiking, pioneering, service, and leadership — planned and run by the scouts, backed by trained adults. Boys ages 11–17 are welcome year-round.
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - generic [ref=e26]: Who
+          - text: Boys ages 11–17
+        - generic [ref=e27]:
+          - generic [ref=e28]: Meetings
+          - generic [ref=e29]: "TODO(dad): night & time"
+        - generic [ref=e30]:
+          - generic [ref=e31]: Joining
+          - text: Any time of year
+      - heading "The program" [level=2] [ref=e32]
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: "01"
+          - generic [ref=e36]:
+            - heading "Weekly meetings" [level=3] [ref=e37]
+            - paragraph [ref=e38]: "TODO(dad): meeting night, time, and location"
+        - generic [ref=e39]:
+          - generic [ref=e40]: "02"
+          - generic [ref=e41]:
+            - heading "Monthly adventures" [level=3] [ref=e42]
+            - paragraph [ref=e43]:
+              - text: Campouts and outings nearly every month — see the
+              - link "schedule" [ref=e44] [cursor=pointer]:
+                - /url: schedule.html
+              - text: for what's next.
+        - generic [ref=e45]:
+          - generic [ref=e46]: "03"
+          - generic [ref=e47]:
+            - heading "Youth-led" [level=3] [ref=e48]
+            - paragraph [ref=e49]: Scouts plan and lead everything. They learn leadership by leading.
+      - heading "Upcoming events" [level=2] [ref=e50]
+      - paragraph [ref=e51]: Straight from the troop Google Calendar — always current.
+      - iframe [ref=e53]:
+        - generic [ref=f1e2]:
+          - generic:
+            - img "Google logo"
+          - generic [ref=f1e3]: Sign in to your Google Account
+          - generic [ref=f1e4]: You must sign in to access this content
+          - button "Sign in" [ref=f1e6] [cursor=pointer]
+      - paragraph [ref=e54]:
+        - link "Full schedule →" [ref=e55] [cursor=pointer]:
+          - /url: schedule.html
+      - heading "Latest announcements" [level=2] [ref=e56]
+      - article [ref=e57]:
+        - heading "Welcome to the new Troop 2536 website Pinned" [level=3] [ref=e58]:
+          - text: Welcome to the new Troop 2536 website
+          - generic [ref=e59]: Pinned
+        - generic [ref=e60]: September 10, 2026
+        - paragraph [ref=e61]: Welcome to our brand-new home on the web. You'll find the schedule, announcements, documents, and how to reach us — all in one place.
+        - paragraph [ref=e62]:
+          - text: Thinking about joining? Boys ages 11–17 can join at any time of year —
+          - link "email us" [ref=e63] [cursor=pointer]:
+            - /url: mailto:troop2536@gmail.com?subject=Joining%20Troop%202536
+          - text: and come visit a meeting. We'd love to meet you.
+      - paragraph [ref=e64]:
+        - link "All announcements →" [ref=e65] [cursor=pointer]:
+          - /url: announcements.html
+  - contentinfo [ref=e66]:
+    - generic [ref=e67]:
+      - generic [ref=e68]:
+        - generic [ref=e69]: ⚜Troop 2536
+        - paragraph [ref=e70]:
+          - text: "Scouts BSA · Mountain House, California Chartered organization: TODO(dad)"
+          - link "troop2536@gmail.com" [ref=e71] [cursor=pointer]:
+            - /url: mailto:troop2536@gmail.com
+      - generic [ref=e72]:
+        - paragraph [ref=e73]: Site
+        - list [ref=e74]:
+          - listitem [ref=e75]:
+            - link "About" [ref=e76] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=e77]:
+            - link "Schedule" [ref=e78] [cursor=pointer]:
+              - /url: schedule.html
+          - listitem [ref=e79]:
+            - link "Announcements" [ref=e80] [cursor=pointer]:
+              - /url: announcements.html
+          - listitem [ref=e81]:
+            - link "Documents" [ref=e82] [cursor=pointer]:
+              - /url: documents.html
+          - listitem [ref=e83]:
+            - link "Contact" [ref=e84] [cursor=pointer]:
+              - /url: contact.html
+      - generic [ref=e85]:
+        - paragraph [ref=e86]: Join
+        - paragraph [ref=e87]:
+          - text: Boys ages 11–17 can join any time of year.
+          - link "Email us to visit a meeting" [ref=e88] [cursor=pointer]:
+            - /url: mailto:troop2536@gmail.com?subject=Joining%20Troop%202536
+        - paragraph [ref=e89]: © 2026 Troop 2536 · Part of Scouting America

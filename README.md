@@ -49,6 +49,12 @@ Open a PR that changes the About page: the troop meets Tuesday nights at
 
 This same recipe covers every yellow `TODO(dad)` highlight on the site.
 
+## Recipe 3b — Set the landing photo
+
+Drop a photo named **`Home.png`** next to `index.html` (repo root). It
+becomes the home page's primary photo automatically — nothing else to
+edit. Remove the file and it disappears.
+
 ## Recipe 4 — One-time setups (do these first)
 
 | Setup | Say to Claude Code |

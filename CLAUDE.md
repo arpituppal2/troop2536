@@ -29,6 +29,13 @@ design goal is "push to main → live" with as few moving parts as possible.
 9. **Calendar:** the Google Calendar embed lives in `index.html` and
    `schedule.html` with `CALENDAR_ID_PLACEHOLDER`. Replace it in both; never
    hardcode a different ID in one place only.
+10. **Landing photo:** the home page hero shows `Home.png` when a file of
+    that exact name exists at the repo root, and hides automatically when it
+    doesn't (see `index.html`, `.hero-photo`). Don't add a different photo
+    mechanism.
+11. **No eyebrows:** there are no small-caps micro-labels above headings
+    anywhere (the `.label` / `.facts` styles are deleted). Don't add them
+    back.
 
 ## Maintenance guide
 

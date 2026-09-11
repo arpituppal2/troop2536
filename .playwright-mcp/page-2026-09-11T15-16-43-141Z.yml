@@ -1,0 +1,110 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - link "Troop 2536 Mountain House, California" [ref=e6] [cursor=pointer]:
+        - /url: index.html
+        - generic [ref=e7]: ⚜
+        - generic [ref=e8]:
+          - text: Troop 2536
+          - generic [ref=e9]: Mountain House, California
+      - checkbox "Menu"
+      - navigation "Main" [ref=e10]:
+        - link "Home" [ref=e11] [cursor=pointer]:
+          - /url: index.html
+        - link "About" [ref=e12] [cursor=pointer]:
+          - /url: about.html
+        - link "Schedule" [ref=e13] [cursor=pointer]:
+          - /url: schedule.html
+        - link "Announcements" [ref=e14] [cursor=pointer]:
+          - /url: announcements.html
+        - link "Documents" [ref=e15] [cursor=pointer]:
+          - /url: documents.html
+        - link "Contact" [ref=e16] [cursor=pointer]:
+          - /url: contact.html
+  - main [ref=e17]:
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - heading "Adventure starts here." [level=1] [ref=e20]
+        - paragraph [ref=e21]: Troop 2536 is a Scouts BSA troop in Mountain House, California. Camping, hiking, pioneering, service, and leadership — planned and run by the scouts, backed by trained adults. Girls ages 11–17 are welcome year-round.
+      - heading "The program" [level=2] [ref=e23]
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - generic [ref=e26]: "01"
+          - generic [ref=e27]:
+            - heading "Weekly meetings" [level=3] [ref=e28]
+            - paragraph [ref=e29]: "TODO(dad): meeting night, time, and location"
+        - generic [ref=e30]:
+          - generic [ref=e31]: "02"
+          - generic [ref=e32]:
+            - heading "Monthly adventures" [level=3] [ref=e33]
+            - paragraph [ref=e34]:
+              - text: Campouts and outings nearly every month — see the
+              - link "schedule" [ref=e35] [cursor=pointer]:
+                - /url: schedule.html
+              - text: for what's next.
+        - generic [ref=e36]:
+          - generic [ref=e37]: "03"
+          - generic [ref=e38]:
+            - heading "Youth-led" [level=3] [ref=e39]
+            - paragraph [ref=e40]: Scouts plan and lead everything. They learn leadership by leading.
+      - heading "Upcoming events" [level=2] [ref=e41]
+      - paragraph [ref=e42]: Straight from the troop Google Calendar — always current.
+      - iframe [ref=e44]:
+        - generic [ref=f1e2]:
+          - img "Google logo" [ref=f1e4]
+          - generic [ref=f1e5]: Sign in to your Google Account
+          - generic [ref=f1e6]: You must sign in to access this content
+          - button "Sign in" [ref=f1e8] [cursor=pointer]
+      - paragraph [ref=e45]:
+        - link "Full schedule →" [ref=e46] [cursor=pointer]:
+          - /url: schedule.html
+      - heading "Latest announcements" [level=2] [ref=e47]
+      - article [ref=e48]:
+        - heading "Welcome to the new Troop 2536 website Pinned" [level=3] [ref=e49]:
+          - text: Welcome to the new Troop 2536 website
+          - generic [ref=e50]: Pinned
+        - generic [ref=e51]: September 10, 2026
+        - paragraph [ref=e52]: Welcome to our brand-new home on the web. You'll find the schedule, announcements, documents, and how to reach us — all in one place.
+        - paragraph [ref=e53]:
+          - text: Thinking about joining? Girls ages 11–17 can join at any time of year —
+          - link "email us" [ref=e54] [cursor=pointer]:
+            - /url: mailto:troop2536@gmail.com?subject=Joining%20Troop%202536
+          - text: and come visit a meeting. We'd love to meet you.
+      - paragraph [ref=e55]:
+        - link "All announcements →" [ref=e56] [cursor=pointer]:
+          - /url: announcements.html
+  - contentinfo [ref=e57]:
+    - generic [ref=e58]:
+      - generic [ref=e59]:
+        - generic [ref=e60]: ⚜Troop 2536
+        - paragraph [ref=e61]:
+          - text: "Scouts BSA · Mountain House, California Chartered organization: TODO(dad)"
+          - link "troop2536@gmail.com" [ref=e62] [cursor=pointer]:
+            - /url: mailto:troop2536@gmail.com
+      - generic [ref=e63]:
+        - paragraph [ref=e64]: Site
+        - list [ref=e65]:
+          - listitem [ref=e66]:
+            - link "About" [ref=e67] [cursor=pointer]:
+              - /url: about.html
+          - listitem [ref=e68]:
+            - link "Schedule" [ref=e69] [cursor=pointer]:
+              - /url: schedule.html
+          - listitem [ref=e70]:
+            - link "Announcements" [ref=e71] [cursor=pointer]:
+              - /url: announcements.html
+          - listitem [ref=e72]:
+            - link "Documents" [ref=e73] [cursor=pointer]:
+              - /url: documents.html
+          - listitem [ref=e74]:
+            - link "Contact" [ref=e75] [cursor=pointer]:
+              - /url: contact.html
+      - generic [ref=e76]:
+        - paragraph [ref=e77]: Join
+        - paragraph [ref=e78]:
+          - text: Girls ages 11–17 can join any time of year.
+          - link "Email us to visit a meeting" [ref=e79] [cursor=pointer]:
+            - /url: mailto:troop2536@gmail.com?subject=Joining%20Troop%202536
+        - paragraph [ref=e80]: © 2026 Troop 2536 · Part of Scouting America
